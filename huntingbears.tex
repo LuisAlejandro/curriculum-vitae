@@ -2,17 +2,17 @@
 
 \usepackage[nochapters]{classicthesis}
 \usepackage[TextAligned,NoDate]{currvita}
-\usepackage{hyperref,fullpage,xcolor}
+\usepackage{hyperref,fullpage,xcolor,graphicx}
 
-\renewcommand{\cvheadingfont}{\huge\color{cyan}}
-\renewcommand{\cvlistheadingfont}{\large}
+\renewcommand{\cvheadingfont}{\Huge}
+\renewcommand{\cvlistheadingfont}{\textbf\large}
 \hypersetup{colorlinks,breaklinks,urlcolor=cyan,linkcolor=cyan}
 
 \begin{document}
 \begin{cv}{Luis Alejandro Mart\'inez Faneyth}
-
 \vspace{1em}
 
+\begin{minipage}[ht]{.7\linewidth}
 \begin{cvlist}{Datos Personales}
 \item[\textit{\small{nacimiento}}]{Caracas, Venezuela --- 26 de Julio de 1986}
 \item[\textit{\small{email}}]{\href{mailto:luis@huntingbears.com.ve}{luis@huntingbears.com.ve}}
@@ -20,47 +20,53 @@
 \item[\textit{\small{gitorious}}]{\href{http://gitorious.org/~huntingbears}{gitorious.org/$\sim$huntingbears}}
 \item[\textit{\small{github}}]{\href{http://github.com/HuntingBears}{github.com/HuntingBears}}
 \end{cvlist}
+\end{minipage}
+\begin{minipage}[ht]{.3\linewidth}
+\includegraphics{huntingbears.jpg}
+\end{minipage}
+\vspace{1em}
 
 \begin{cvlist}{Formaci\'on acad\'emica}
 \item[{\parbox[t]{6em}{\textit{\large{2009}}}}]{
 	\parbox[t]{\linewidth}{
 		\textbf{Universidad Nacional Experimental de la Fuerza Armada} --- Maracay, Venezuela\\
 		\textit{Ingeniero de Telecomunicaciones}
-%		\footnotesize{Técnicas Organizativas, Trabajo en Equipo, Cooperación y Complementariedad, Establecimiento de Prioridades, Cronogramas de Actividades, Valoración del Tiempo.}
 	}
 }
 \end{cvlist}
+\vspace{1em}
 
 \begin{cvlist}{Cursos de actualizaci\'on}
 \item[{\parbox[t]{6em}{\textit{\large{2011}}}}]{
 	\parbox[t]{\linewidth}{
 		\textbf{Centro Nacional de Adistramiemto} --- Caracas, Venezuela\\
-		\textit{Administración del tiempo y productividad laboral} --- 16 Horas
-		\footnotesize{Técnicas Organizativas, Trabajo en Equipo, Cooperación y Complementariedad, Establecimiento de Prioridades, Cronogramas de Actividades, Valoración del Tiempo.}
+		\textit{Administraci\'on del tiempo y productividad laboral} --- 16 Horas\\
+		\footnotesize{T\'ecnicas organizativas, trabajo en equipo, cooperaci\'on y complementariedad, establecimiento de prioridades, cronogramas de actividades, valoraci\'on del tiempo.}
 	}
 }
 \item[{\parbox[t]{6em}{\textit{\large{2011}}}}]{
 	\parbox[t]{\linewidth}{
-		\textbf{Centro Nacional de Tecnologías de la Informaci\'on} --- Caracas, Venezuela\\
-		\textit{Python avanzado} --- 32 Horas
-		\footnotesize{Estructuras, Entornos Virtuales, Versionamiento (Mercurial, Git), reStructured Text, Documentación con Sphinx, Plataformas Web, Django, Bases de Datos (Sqlite), GUI (pyGTK, pyQT), Iteradores, Generadores, Decoradores, Pruebas Unitarias.}
+		\textbf{Centro Nacional de Tecnolog\'ias de la Informaci\'on} --- Caracas, Venezuela\\
+		\textit{Python avanzado} --- 32 Horas\\
+		\footnotesize{Estructuras, entornos virtuales, versionamiento (Mercurial, Git), reStructured Text, documentaci\'on con sphinx, plataformas web, django, bases de datos (Sqlite), GUI (pyGTK, pyQT), iteradores, generadores, decoradores, pruebas unitarias.}
 	}
 }
 \item[{\parbox[t]{6em}{\textit{\large{2011}}}}]{
 	\parbox[t]{\linewidth}{
-		\textbf{Centro Nacional de Tecnologías de la Informaci\'on} --- Caracas, Venezuela\\
-		\textit{Python b\'asico} --- 16 Horas
-		\footnotesize{Intérprete, Línea de Comandos, Librería Estándar, Funciones Básicas, Tipos de Datos, Módulos, Estructuras, Ciclos, Interacción con el Usuario y el Sistema Operativo, Operaciones Aritméticas, Formato de Resultados, Tratamiento de Errores.}
+		\textbf{Centro Nacional de Tecnolog\'ias de la Informaci\'on} --- Caracas, Venezuela\\
+		\textit{Python b\'asico} --- 16 Horas\\
+		\footnotesize{Int\'erprete, l\'inea de comandos, librer\'ia est\'andar, funciones b\'asicas, tipos de datos, m\'odulos, estructuras, ciclos, interacci\'on con el usuario y el sistema operativo, operaciones aritm\'eticas, formato de resultados, tratamiento de errores.}
 	}
 }
 \item[{\parbox[t]{6em}{\textit{\large{2011}}}}]{
 	\parbox[t]{\linewidth}{
-		\textbf{Fundación Hoatzin} --- Caracas, Venezuela\\
-		\textit{Administración de sitios en Plone con Cyn.in} --- 40 Horas
-		\footnotesize{Intérprete, Línea de Comandos, Librería Estándar, Funciones Básicas, Tipos de Datos, Módulos, Estructuras, Ciclos, Interacción con el Usuario y el Sistema Operativo, Operaciones Aritméticas, Formato de Resultados, Tratamiento de Errores.}
+		\textbf{Fundaci\'on Hoatzin} --- Caracas, Venezuela\\
+		\textit{Administraci\'on de sitios en Plone con Cyn.in} --- 40 Horas\\
+		\footnotesize{Instalaci\'on de Plone con Unified Installer y zc.buildout. Configuración, apariencia, roles de usuario, instalaci\'on de productos, Zope y ZODB.}
 	}
 }
 \end{cvlist}
+\vspace{1em}
 
 \begin{cvlist}{Eventos (ponente)}
 \item[{\parbox[t]{6em}{\textit{\large{2010}}}}]{
@@ -83,7 +89,7 @@
 }
 \item[{\parbox[t]{6em}{\textit{\large{2011}}}}]{
 	\parbox[t]{\linewidth}{
-		\textbf{7mo Día Debian} --- Caracas, Venezuela\\
+		\textbf{7mo D\'ia Debian} --- Caracas, Venezuela\\
 		\textit{Haciendo distribuciones derivadas con Canaima Semilla}
 	}
 }
@@ -96,7 +102,7 @@
 \item[{\parbox[t]{6em}{\textit{\large{2012}}}}]{
 	\parbox[t]{\linewidth}{
 		\textbf{Festival Latinoamericano de Instalaci\'on de Software Libre} --- Maracaibo, Venezuela\\
-		\textit{¿Cómo desarrollar para Canaima GNU/Linux}
+		\textit{¿C\'omo desarrollar para Canaima GNU/Linux}
 	}
 }
 \item[{\parbox[t]{6em}{\textit{\large{2012}}}}]{
@@ -106,11 +112,12 @@
 	}
 }
 \end{cvlist}
+\vspace{1em}
 
 \begin{cvlist}{Eventos (asistente)}
 \item[{\parbox[t]{6em}{\textit{\large{2007}}}}]{
 	\parbox[t]{\linewidth}{
-		\textbf{Simposio Internacional de Telecomunicaciones} --- Mérida, Venezuela\\
+		\textbf{Simposio Internacional de Telecomunicaciones} --- M\'erida, Venezuela\\
 	}
 }
 \item[{\parbox[t]{6em}{\textit{\large{2011}}}}]{
@@ -119,34 +126,35 @@
 	}
 }
 \end{cvlist}
+\vspace{1em}
 
 \begin{cvlist}{Experiencia laboral}
 \item[{\parbox[t]{6em}{\textit{\large{Nov 2009\\Actual}}}}]{
 	\parbox[t]{\linewidth}{
 		\textbf{Centro Nacional de Tecnolog\'ias de Informaci\'on} --- Caracas, Venezuela\\
-		\textit{Administrador de Plataforma Tecnol\'ogica}
-		\footnotesize{Desarrollo del Sistema Operativo Canaima GNU/Linux. Dise\~no e implementaci\'on de soluciones inform\'aticas en Software Libre. Administración de Servicios. Soporte de alto nivel.}
+		\textit{Administrador de Plataforma Tecnol\'ogica}\\
+		\footnotesize{Desarrollo del Sistema Operativo Canaima GNU/Linux. Dise\~no e implementaci\'on de soluciones inform\'aticas en Software Libre. Administraci\'on de Servicios. Soporte de alto nivel.}
 	}
 }
 \item[{\parbox[t]{6em}{\textit{\large{Oct 2010\\Abr 2011}}}}]{
 	\parbox[t]{\linewidth}{
 		\textbf{Universidad Nacional Experimental de la Fuerza Armada} --- Maracay, Venezuela\\
-		\textit{Docente}
-		\footnotesize{Enseñanza de los sistemas de numeración, operaciones aritméticas, representación de sistemas digitales, compuertas lógicas, sistemas síncronos y asíncronos, flip-flops, memorias.}
+		\textit{Docente}\\
+		\footnotesize{Ense\~nanza de los sistemas de numeraci\'on, operaciones aritm\'eticas, representaci\'on de sistemas digitales, compuertas l\'ogicas, sistemas s\'incronos y as\'incronos, flip-flops, memorias.}
 	}
 }
 \item[{\parbox[t]{6em}{\textit{\large{Nov 2008\\Nov 2009}}}}]{
 	\parbox[t]{\linewidth}{
 		\textbf{NETUNO, C.A.} --- Maracay, Venezuela\\
-		\textit{Técnico de Levantamiento}
-		\footnotesize{Diseño de Proyectos para la creación y ampliación de Redes Coaxiales para voz, datos y TV bajo el estándar DOCSIS. Supervisión de la construcción de Redes Híbridas. Levantamiento de información en sitio. Diagramación con Autocad. Gestión de Materiales y Supervisión de Contratistas.}
+		\textit{T\'ecnico de Levantamiento}\\
+		\footnotesize{Dise\~no de Proyectos para la creaci\'on y ampliaci\'on de Redes Coaxiales para voz, datos y TV bajo el est\'andar DOCSIS. Supervisi\'on de la construcci\'on de Redes H\'ibridas. Levantamiento de informaci\'on en sitio. Diagramaci\'on con Autocad. Gesti\'on de Materiales y Supervisi\'on de Contratistas.}
 	}
 }
 \item[{\parbox[t]{6em}{\textit{\large{May 2008\\Nov 2009}}}}]{
 	\parbox[t]{\linewidth}{
 		\textbf{Freelance} --- Maracay, Venezuela\\
-		\textit{Docente}
-		\footnotesize{Enseñanza de maquetamiento de páginas web a través de HTML y CSS, usando tecnologías libres. Agregando interactividad con javascript (jQuery). Páginas dinámicas con PHP. Creación y consulta de bases de datos basadas en SQL. Animación de secuencias con Adobe Flash. ActionScript.}
+		\textit{Docente}\\
+		\footnotesize{Ense\~nanza de maquetamiento de p\'aginas web a trav\'es de HTML y CSS, usando tecnolog\'ias libres. Agregando interactividad con javascript (jQuery). P\'aginas din\'amicas con PHP. Creaci\'on y consulta de bases de datos basadas en SQL. Animaci\'on de secuencias con Adobe Flash. ActionScript.}
 	}
 }
 \end{cvlist}
@@ -155,10 +163,11 @@
 \item[{\parbox[t]{6em}{\textit{\large{2012}}}}]{
 	\parbox[t]{\linewidth}{
 		\textbf{Centro Nacional de Tecnolog\'ias de la Informaci\'on} --- Caracas, Venezuela\\
-		\textit{Desempeño excepcional}
+		\textit{Desempe\~no excepcional}
 	}
 }
 \end{cvlist}
+\vspace{1em}
 
 \begin{cvlist}{Habilidades}
 \item[\textit{\large{Idiomas}}]{
@@ -171,8 +180,8 @@
 \item[\textit{\large{Diagramaci\'on}}]{XML, HTML (4.x -- 5), reStructuredText, \LaTeX\, CSS.}
 \item[\textit{\large{Dise\~no}}]{GIMP, Inkscape, Adobe Photoshop.}
 \item[\textit{\large{Otros}}]{
-	Generación de paquetes de software bajo las políticas de Debian.\\
-	Generación de imágenes instalables a partir de distribuciones derivadas de Debian.
+	Generaci\'on de paquetes de software bajo las pol\'iticas de Debian.\\
+	Generaci\'on de im\'agenes instalables a partir de distribuciones derivadas de Debian.
 }
 \end{cvlist}
 
