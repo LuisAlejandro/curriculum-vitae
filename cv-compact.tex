@@ -1,0 +1,190 @@
+\documentclass[12pt]{article}
+
+\usepackage[NoDate]{currvita}
+\usepackage[letterpaper, margin=0in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage[svgnames]{xcolor}
+
+\renewcommand{\cvheadingfont}{\rmfamily\bfseries\Huge}
+\renewcommand{\cvlistheadingfont}{\rmfamily\scshape\Large}
+\renewcommand{\familydefault}{\sfdefault}
+\hypersetup{colorlinks,urlcolor=Crimson}
+
+\addtolength{\hoffset}{0in}
+\addtolength{\voffset}{0.125in}
+
+\setsansfont{Roboto}[
+    Path=./fonts/Roboto/,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+  ]
+
+\setromanfont{Montserrat}[
+    Path=./fonts/Montserrat/,
+    Extension = .ttf,
+    UprightFont=*-Thin,
+    BoldFont=*-Light,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+  ]
+
+\begin{document}
+
+\centering
+\begin{cv}{Luis Alejandro Mart\'inez Faneyth}
+  
+  \vspace{0.25em}
+  \href{mailto:luis@luisalejandro.org}{luis@luisalejandro.org} •
+  \href{https://luisalejandro.org/portfolio}{luisalejandro.org/portfolio} •
+  \href{http://github.com/LuisAlejandro}{github.com/LuisAlejandro}
+  \vspace{0.125em}
+
+  \hrulefill
+
+  \begin{minipage}[t]{0.35\textwidth}
+    \vspace{0.125em}
+    
+    \begin{minipage}{\linewidth}
+      \textrm{\textsc{\Large{Education}}}
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{UNEFA} • \textrm{\textbf{Telecom Engineer}}\\
+        2009 • Maracay, Venezuela\\
+        \footnotesize{Design, development, implementation and debugging of electrical communications systems, electronic, electromagnetic or optical.}\\
+      }
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{CNTI} • \textrm{\textbf{Advanced python}}\\
+        2011 • Caracas, Venezuela\\
+        \footnotesize{Structures, virtual environments, version control systems, reStructuredText, Sphinx, Django, Sqlite, GUI (pyGTK, pyQT), iterators, generators, decorators, unit tests.}\\
+      }
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{CNTI} • \textrm{\textbf{Basic python}}\\
+        2011 • Caracas, Venezuela\\
+        \footnotesize{Interpreter, standard library, basic functions, data types, modules, cycles, interaction with the user and the operating system, output format, error handling.}\\
+      }
+      \newline
+    \end{minipage}
+
+    \vspace{0.25em}
+    \begin{minipage}{\linewidth}
+      \textrm{\textsc{\Large{Skills}}}
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{Languages} • \footnotesize{Spanish (native), English (fluent)}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Programming} • \footnotesize{Python, TypeScript, Golang, PHP, Shell script, Make.}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Web} • \footnotesize{Ionic, React, Next.js, Anime.js, GSAP, Express.js, Webpack, Gulp, Jekyll, Django, Flask.}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{DevOps} • \footnotesize{Docker, Kubernetes, Git, AWS, Digital Ocean, Travis CI, Github Actions, Ansible.}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Database} • \footnotesize{PostgreSQL, MySQL, MongoDB, Redis.}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Diagramming} • \footnotesize{Markdown, reStructuredText, \LaTeX.}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Other} • \footnotesize{Debian packaging, custom kernels and installable ISO images for GNU/Linux distributions. Python Packaging.}
+      }
+      \newline
+      \newline
+    \end{minipage}
+
+    \vspace{0.25em}
+    \begin{minipage}{\linewidth}
+      \textrm{\textsc{\Large{Conferences}}}
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{Debian Day} • \textrm{\textbf{Speaker}}\\
+        2018 • Maracay, Venezuela\\
+        \footnotesize{The Internal World of a Programmer.}\\
+      }
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{DebConf 2012} • \textrm{\textbf{Speaker/Developer}}\\
+        2012 • Managua, Nicaragua\\
+        \footnotesize{Making derivative distributions with Canaima Semilla.}\\
+      }
+      \newline
+    \end{minipage}
+
+    \vspace{0.25em}
+    \begin{minipage}{\linewidth}
+      \textrm{\textsc{\Large{Side projects}}}
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{Dockershelf} • \href{https://github.com/Dockershelf/dockershelf}{Dockershelf/dockershelf}\\
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Pip Sala Bim} • \href{https://github.com/LuisAlejandro/pipsalabim}{LuisAlejandro/pipsalabim}\\
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Candyshop} • \href{https://github.com/LuisAlejandro/candyshop}{LuisAlejandro/candyshop}\\
+      }
+    \end{minipage}
+  
+  \end{minipage}\hspace{0.5cm}
+  \begin{minipage}[t]{0.55\textwidth}
+    \vspace{0.125em}
+
+    \textrm{\textsc{\Large{Experience}}}
+    \newline
+    \parbox[t]{\linewidth}{
+      \textbf{\href{http://soleit.app}{Soleit}} • \textrm{\textbf{Full Stack Developer}}\\
+      Jan 2020 --- present • Santiago, Chile (Remote)\\
+      \footnotesize{Built the backend and frontend of SoleTech 2.0, a groundbreaking desktop app which allows to diagnose and design specialized foot insoles. Implemented an Electron container for an Ionic-React app. Used Express.js, Sequelize and Postgres to create a REST API. Its release allowed Soleit to enter the growth stage on the startup life cycle, with financing from Ganesha Lab, UC Davis and CORFO Chile.}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{http://collagelabs.org}{Collage Labs}} • \textrm{\textbf{Founder}}\\
+      Sep 2021 --- present • Maracay, Venezuela\\
+      \footnotesize{Identified and maximized sales opportunities resulting in 6 new clients. Worked with project managers and developers supervising requirement completion for clients around the world. Worked with designers to set up website and social media presence.}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://guayoyo.io}{Guayoyo}} • \textrm{\textbf{Python Developer}}\\
+      Jun 2019 --- Dec 2021 • Montevideo, Uruguay (Remote)\\
+      \footnotesize{Implemented speed and memory optimizations to \href{https://howlermonkey.io}{HowlerMonkey} updater, which translated to a 66\% memory reduction and faster updates. Developed modules to add vulnerabilities sources to the index, including: OpenVAS, Nessus, Metasploit, ExploitDB, PacketStorm, Snort, Suricata and Nmap, allowing Guayoyo to add value, increase sales and reduce costs.}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://web.archive.org/web/20180413143616/https://webuzz.es/}{Webuzz}} • \textrm{\textbf{Wordpress Developer}}\\
+      Apr 2019 --- Apr 2020 • Madrid, Spain (Remote)\\
+      \footnotesize{Developed \href{https://recetags.com}{Recetags} and \href{https://ginburdon.com}{Gin Burdon} websites using Wordpress and AJAX technologies.}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{http://leadboxhq.com}{Leadbox}} • \textrm{\textbf{Full Stack Developer}}\\
+      May 2018 --- Feb 2020 • Ottawa, Canada (Remote)\\
+      \footnotesize{Implemented an asset build queue based on webpack and client-server architecture. Developed Marvin, a video creation app configurable by json files. Developed a deployment system for Wordpress sites using Ansible. Implemented UI/UX optimizations on Leaderbox, an Angular web app. Created Wordpress plugins. Developed \href{https://leadboxhq.com}{Leadbox homepage}.}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://guayoyo.io}{Guayoyo}} • \textrm{\textbf{Python Developer}}\\
+      Jul 2017 --- May 2018 • Montevideo, Uruguay (Remote)\\
+      \footnotesize{Created the backend for \href{https://howlermonkey.io}{HowlerMonkey}, a vulnerability reporting app. Implemented HowlerMonkey's REST API using Flask.}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://www.vauxoo.com}{Vauxoo}} • \textrm{\textbf{Full Stack Developer}}\\
+      Feb 2016 --- Nov 2016 • Valencia, Venezuela\\
+      \footnotesize{Improved the company's docker images. Developed Odoo pylint modules.}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://web.archive.org/web/20180322024522/http://grupo361.com/}{Grupo 361}} • \textrm{\textbf{Software Engineer}}\\
+      Sep 2014 --- May 2015 • Caracas, Venezuela\\
+      \footnotesize{Developed \href{https://web.archive.org/web/20180322024522/http://grupo361.com/}{American Eagle Outfitters Panamá} and \href{https://web.archive.org/web/20180322024522/http://grupo361.com/}{Btech watches} websites.}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://www.cnti.gob.ve}{CNTI}} • \textrm{\textbf{Linux Architect}}\\
+      Nov 2009 --- Jul 2014 • Caracas, Venezuela\\
+      \footnotesize{Developed versions 3.0, 3.1, 4.0 and 4.1 of Canaima GNU/Linux Operating system, allowing the venezuelan government to reduce costs of shipping 6 million laptops for educational program \textsl{Canaima Educativo}.}\\
+    }
+  \end{minipage}
+
+\end{cv}
+\end{document}

@@ -1,15 +1,30 @@
-#!/usr/bin/make -f
+#!/usr/bin/env make -f
 # -*- makefile -*-
-#
 
-SHELL = sh -e
+SHELL = bash -e
 
-generate:
 
-	@docker run --rm -i -u "$(shell id -u):$(shell id -g)" \
-		-v "$(PWD):/data" -w /data dockershelf/latex:basic \
-		pdflatex curriculumvitae-es.tex
-	@docker run --rm -i -u "$(shell id -u):$(shell id -g)" \
-		-v "$(PWD):/data" -w /data dockershelf/latex:basic \
-		pdflatex curriculumvitae-en.tex
-	@rm *.aux *.out *.log
+image:
+	@docker-compose -p latex -f docker-compose.yml build --force-rm --pull
+
+start:
+	@docker-compose -p latex -f docker-compose.yml up --remove-orphans -d
+
+generate: start
+	@docker-compose -p latex -f docker-compose.yml exec \
+		-T --user luisalejandro latex xelatex cv-compact.tex
+
+console: start
+	@docker-compose -p latex -f docker-compose.yml exec \
+		--user luisalejandro latex bash
+
+stop:
+	@docker-compose -p latex -f docker-compose.yml stop latex
+
+down:
+	@docker-compose -p latex -f docker-compose.yml down \
+		--remove-orphans
+
+destroy:
+	@docker-compose -p latex -f docker-compose.yml down \
+		--rmi all --remove-orphans -v
