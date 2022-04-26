@@ -10,6 +10,6 @@ make generate
 
 ## Made with 💖 and 🍔
 
-![Banner](https://raw.githubusercontent.com/LuisAlejandro/luisalejandro.org/develop/images/author-banner.svg)
+![Banner](https://raw.githubusercontent.com/LuisAlejandro/curriculum-vitae/master/images/author-banner.svg)
 
 > Web [luisalejandro.org](http://luisalejandro.org/) · GitHub [@LuisAlejandro](https://github.com/LuisAlejandro) · Twitter [@LuisAlejandro](https://twitter.com/LuisAlejandro)
