@@ -13,6 +13,8 @@ start:
 generate: start
 	@docker-compose -p latex -f docker-compose.yml exec \
 		-T --user luisalejandro latex xelatex cv-compact.tex
+	@docker-compose -p latex -f docker-compose.yml exec \
+		-T --user luisalejandro latex xelatex cover-compact.tex
 
 console: start
 	@docker-compose -p latex -f docker-compose.yml exec \

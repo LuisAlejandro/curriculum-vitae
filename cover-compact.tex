@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+
+\usepackage[NoDate]{currvita}
+\usepackage[letterpaper, margin=0in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+
+\renewcommand{\cvheadingfont}{\rmfamily\bfseries\Huge}
+\renewcommand{\cvlistheadingfont}{\rmfamily\scshape\Large}
+\renewcommand{\familydefault}{\sfdefault}
+\hypersetup{colorlinks,urlcolor=Crimson}
+
+\addtolength{\hoffset}{0in}
+\addtolength{\voffset}{0.125in}
+
+\setsansfont{Roboto}[
+    Path=./fonts/Roboto/,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+  ]
+
+\setromanfont{Montserrat}[
+    Path=./fonts/Montserrat/,
+    Extension = .ttf,
+    UprightFont=*-Thin,
+    BoldFont=*-Light,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+  ]
+
+\begin{document}
+
+  \centering
+  \begin{cv}{Luis Alejandro Mart\'inez Faneyth}
+    
+    \vspace{0.25em}
+    \href{mailto:luis@luisalejandro.org}{luis@luisalejandro.org} •
+    \href{https://luisalejandro.org/portfolio}{luisalejandro.org/portfolio} •
+    \href{https://github.com/LuisAlejandro}{github.com/LuisAlejandro}
+    \vspace{0.125em}
+
+    \hrulefill
+
+    \begin{minipage}[t]{0.75\textwidth}
+      \vspace{4em}
+
+      \textrm{\textsc{\Large{Dear [Hiring Manager],}}}
+      \vspace{2em}
+      \newline
+      \parbox[t]{\linewidth}{
+        \linespread{1.5}\selectfont
+          I've been taking a look at the products [Company] offers and I'm very interested in joining your team. As a software engineer with +13 years in the field, I've helped several latin american startups hit and exceed their development needs.
+          \newline
+
+          On 2022 I joined \href{https://wheeltheworld.com}{Wheel the World}, a startup that helps people with disabilities in organizing accessible travel. My first assignment was to integrate the company's website backend with the \href{https://expedia.com}{expedia.com} shopping/booking API. My contributions were crucial to increase the company's revenue by 39\% on Q1 2023.
+          \newline
+
+          Earlier on 2020 I joined \href{https://soleit.app/es/inicio}{Soleit}, a startup specialized in designing foot insoles. I lead a team that developed a groundbreaking desktop app that allowed them to enter the growth stage, with financing from Ganesha Lab, UC Davis and others.
+          \newline
+
+          I've also worked with startups on Spain, Canada, Uruguay and Venezuela. We can discuss my experience in more detail during an interview.
+          \newline
+
+          Thank you for considering my application. I am excited about the opportunity to join [Company] and contribute to its success. Please don't hesitate to contact me if you have any questions.
+          \newline
+
+          Sincerely,
+      }
+      \vspace{0.125em}
+      \parbox[t]{\linewidth}{
+        \centering
+        \vspace{4em}
+        Luis Alejandro Mart\'inez Faneyth • \href{mailto:luis@luisalejandro.org}{luis@luisalejandro.org}
+      }
+    \end{minipage}
+
+  \end{cv}
+\end{document}
