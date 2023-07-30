@@ -1,8 +1,8 @@
-FROM dockershelf/latex:full
+FROM dockershelf/latex:basic
 LABEL maintainer "Luis Alejandro Martínez Faneyth <luis@luisalejandro.org>"
 
 RUN apt-get update && \
-    apt-get install gnupg dirmngr sudo vim
+    apt-get install gnupg dirmngr sudo vim texlive-xetex
 
 RUN echo "luisalejandro ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/luisalejandro
 RUN useradd -ms /bin/bash luisalejandro
