@@ -1,0 +1,189 @@
+\documentclass[12pt]{article}
+
+\usepackage[NoDate]{currvita}
+\usepackage[letterpaper, margin=0in]{geometry}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage[svgnames]{xcolor}
+
+\renewcommand{\cvheadingfont}{\rmfamily\bfseries\Huge}
+\renewcommand{\cvlistheadingfont}{\rmfamily\scshape\Large}
+\renewcommand{\familydefault}{\sfdefault}
+\hypersetup{colorlinks,urlcolor=Crimson}
+
+\addtolength{\hoffset}{0in}
+\addtolength{\voffset}{0.125in}
+
+\setsansfont{Roboto}[
+    Path=./fonts/Roboto/,
+    Extension = .ttf,
+    UprightFont=*-Light,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+  ]
+
+\setromanfont{Montserrat}[
+    Path=./fonts/Montserrat/,
+    Extension = .ttf,
+    UprightFont=*-Thin,
+    BoldFont=*-Light,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+  ]
+
+\begin{document}
+
+\centering
+\begin{cv}{Luis Mart\'inez}
+  
+  \vspace{0.25em}
+  \textcolor{gray}{Telecom Engineer} •
+  \textcolor{gray}{Software Engineer} •
+  \textcolor{gray}{DevOps}
+
+  \vspace{0.125em}
+  \href{mailto:luis@luisalejandro.org}{luis@luisalejandro.org} •
+  \href{https://luisalejandro.org/portfolio}{luisalejandro.org/portfolio}
+  \vspace{0.125em}
+
+  \hrulefill
+
+  \begin{minipage}[t]{0.35\textwidth}
+    \vspace{0.125em}
+    
+    \begin{minipage}{\linewidth}
+      \textrm{\textsc{\Large{Educaación}}}
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{UNEFA} • \textrm{\textbf{Telecom Engineer}}\\
+        2009 • Maracay, Venezuela\\
+        \footnotesize{\textcolor{gray}{Diseño, desarrollo, implementación y depuración de sistemas de comunicaciones eléctricos, electrónicos, electromagnéticos u ópticos.}}\\
+      }
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{CNTI} • \textrm{\textbf{Python avanzado}}\\
+        2011 • Caracas, Venezuela\\
+        \footnotesize{\textcolor{gray}{Estructuras, entornos virtuales, sistemas de control de versiones, reStructuredText, Sphinx, Django, Sqlite, GUI (pyGTK, pyQT), iteradores, generadores, decoradores, pruebas unitarias.}}\\
+      }
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{CNTI} • \textrm{\textbf{Python básico}}\\
+        2011 • Caracas, Venezuela\\
+        \footnotesize{\textcolor{gray}{Intérprete, biblioteca estándar, funciones básicas, tipos de datos, módulos, ciclos, interacción con el usuario y el sistema operativo, formato de salida, manejo de errores.}}\\
+      }
+      \newline
+    \end{minipage}
+
+    \vspace{0.25em}
+    \begin{minipage}{\linewidth}
+      \textrm{\textsc{\Large{Skills}}}
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{Languages} • \footnotesize{\textcolor{gray}{Español (nativo), Inglés (fluido)}}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Programming} • \footnotesize{\textcolor{gray}{Node, Python, Golang, PHP, Shell script, Make.}}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Frontend} • \footnotesize{\textcolor{gray}{Ionic, React, NextJS, Jekyll, Django, Flask.}}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Backend} • \footnotesize{\textcolor{gray}{NestJS, Express, TypeORM, Firebase, Elastic, MySQL, MongoDB, Redis.}}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{DevOps} • \footnotesize{\textcolor{gray}{Docker, Kubernetes, Git, AWS, GCP, Github Actions, Ansible.}}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Diagramming} • \footnotesize{\textcolor{gray}{Markdown, reStructuredText, \LaTeX.}}
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Other} • \footnotesize{\textcolor{gray}{Empaquetado de Debian, kernels personalizados e imágenes ISO instalables para distribuciones GNU/Linux. Empaquetado de Python.}}
+      }
+      \newline
+      \newline
+    \end{minipage}
+
+    \vspace{0.25em}
+    \begin{minipage}{\linewidth}
+      \textrm{\textsc{\Large{Conferencias}}}
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{Debian Day} • \textrm{\textbf{Orador}}\\
+        2018 • Maracay, Venezuela\\
+        \footnotesize{\textcolor{gray}{El mundo interno del programador.}}\\
+      }
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{DebConf 2012} • \textrm{\textbf{Orador/Desarrollador}}\\
+        2012 • Managua, Nicaragua\\
+        \footnotesize{\textcolor{gray}{Haciendo distribuciones derivadas con Canaima Semilla.}}\\
+      }
+      \newline
+    \end{minipage}
+
+    \vspace{0.25em}
+    \begin{minipage}{\linewidth}
+      \textrm{\textsc{\Large{Proyectos}}}
+      \newline
+      \parbox[t]{\linewidth}{
+        \textbf{Dockershelf} • \href{https://github.com/Dockershelf/dockershelf}{Dockershelf/dockershelf}\\
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Agoras} • \href{https://github.com/LuisAlejandro/agoras}{LuisAlejandro/agoras}\\
+      }
+      \parbox[t]{\linewidth}{
+        \textbf{Spices} • \href{https://github.com/LuisAlejandro/spices}{LuisAlejandro/spices}\\
+      }
+    \end{minipage}
+  
+  \end{minipage}\hspace{0.5cm}
+  \begin{minipage}[t]{0.55\textwidth}
+    \vspace{0.125em}
+
+    \textrm{\textsc{\Large{Experience}}}
+    \newline
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://wheeltheworld.com}{Wheel The World}} • \textrm{\textbf{Senior Software Engineer}}\\
+      Jun 2022 --- Jul 2023 • Berkeley, United States (Remoto)\\
+      \footnotesize{\textcolor{gray}{Trabajé agregando módulos CRUD a aplicaciones basadas en Next.js y TypeORM. Automaticé procesos de carga de datos usando Golang. Desarrollé el esquema CI/CD de la compañía usando Docker, Google Cloud Run y Github Actions. Implementé la integración de precios y booking con expedia.com. Desarrollé modulos para una aplicación de gestión de contenidos basada en October CMS (Laravel, PHP).}}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://collagelabs.org}{Collage Labs}} • \textrm{\textbf{Fundador}}\\
+      Jan 2020 --- Jan 2023 • Maracay, Venezuela\\
+      \footnotesize{\textcolor{gray}{Trabajé con analistas de requerimientos y desarrolladores supervisando el cumplimiento de tareas para clientes en todo el mundo. Trabajé con diseñadores para definir y lanzar el sitio web y la presencia en las redes sociales. Identifiqué y maximicé oportunidades de venta resultando en 6 nuevos clientes.}}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://soleit.app}{Soleit}} • \textrm{\textbf{Full Stack Developer}}\\
+      Oct 2020 --- Jun 2022 • Santiago, Chile (Remoto)\\
+      \footnotesize{\textcolor{gray}{Desarrollé el backend y el frontend de SoleTech 2.0, una innovadora aplicación de escritorio que permite diagnosticar y diseñar plantillas especializadas para pies. Implementé un contenedor Electron para una aplicación Ionic-React. Usé Express.js, Sequelize y Postgres para crear una API REST. Su lanzamiento permitió a Soleit entrar en la etapa de crecimiento del ciclo de vida de una startup, con financiamiento de Ganesha Lab, UC Davis y CORFO Chile.}}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://guayoyo.io}{Guayoyo}} • \textrm{\textbf{Python Developer}}\\
+      Jun 2019 --- Dec 2021 • Montevideo, Uruguay (Remoto)\\
+      \footnotesize{\textcolor{gray}{Se implementaron optimizaciones de velocidad y memoria para el \href{https://howlermonkey.io}{HowlerMonkey} updater, lo que se tradujo en una reducción de memoria del 66\% y actualizaciones más rápidas. Desarrollé módulos para agregar fuentes de vulnerabilidades al índice, incluyendo: OpenVAS, Nessus, Metasploit, ExploitDB, PacketStorm, Snort, Suricata y Nmap, permitiendo a Guayoyo agregar valor, aumentar ventas y reducir costos.}}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://web.archive.org/web/20180413143616/https://webuzz.es/}{Webuzz}} • \textrm{\textbf{Wordpress Developer}}\\
+      Apr 2019 --- Apr 2020 • Madrid, Spain (Remoto)\\
+      \footnotesize{\textcolor{gray}{Desarrollé los sitios web de \href{https://web.archive.org/web/20201101021046/https://www.recetags.com/}{Recetags} y \href{https://web.archive.org/web/20191206145303/https://www.ginburdon.com/}{Gin Burdon} usando tecnologías Wordpress y AJAX.}}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://leadboxhq.com}{Leadbox}} • \textrm{\textbf{Full Stack Developer}}\\
+      May 2018 --- Feb 2020 • Ottawa, Canada (Remoto)\\
+      \footnotesize{\textcolor{gray}{Implementé un cola de compilación de assets basado en Webpack y una arquitectura cliente-servidor. Desarrollé Marvin, una aplicación de creación de videos configurable por archivos json. Desarrollé un sistema de puesta en producción para sitios Wordpress utilizando Ansible. Se implementaron optimizaciones de UI/UX en Leaderboard, una aplicación web Angular. Creé plugins de Wordpress. Desarrollé la página web de \href{https://leadboxhq.com}{Leadbox}.}}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://guayoyo.io}{Guayoyo}} • \textrm{\textbf{Python Developer}}\\
+      Jul 2017 --- May 2018 • Montevideo, Uruguay (Remoto)\\
+      \footnotesize{\textcolor{gray}{Creé el backend para \href{https://howlermonkey.io}{HowlerMonkey}, una aplicación de informes de vulnerabilidad. Implementé la API REST de HowlerMonkey usando Flask.}}\\
+    }\vspace{0.125em}
+    \parbox[t]{\linewidth}{
+      \textbf{\href{https://www.cnti.gob.ve}{CNTI}} • \textrm{\textbf{Linux Architect}}\\
+      Nov 2009 --- Jul 2014 • Caracas, Venezuela\\
+      \footnotesize{\textcolor{gray}{Desarrollé las versiones 3.0, 3.1, 4.0 y 4.1 del sistema operativo Canaima GNU/Linux, lo que permitió al gobierno de Venezuela reducir los costos de producción de 6 millones de computadoras portátiles para el programa \textsl{Canaima Educativo}.}}\\
+    }
+  \end{minipage}
+
+\end{cv}
+\end{document}
